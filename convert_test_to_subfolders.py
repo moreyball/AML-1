@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Path to the test folder containing sub-folders
-test_folder = 'content/test'
+test_folder = '/content/AML-1/Test'
 
 # Path to the text files
 class_file = 'classlabel.txt'
@@ -35,4 +35,4 @@ for filename, folder_number in image_info:
     # Move the image to the correct sub-folder
     shutil.move(source_path, destination_path)
 
-print("Images have been organized into sub-folders based on the provided information.")
+print("Test images have been organized into sub-folders based on the class names.")

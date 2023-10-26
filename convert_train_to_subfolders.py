@@ -2,7 +2,7 @@ import os
 import shutil
 
 # Path to the folder containing training images
-source_folder = 'content/train'
+source_folder = '/content/AML-1/Train'
 
 # Loop through each image in the source folder
 for filename in os.listdir(source_folder):
@@ -18,4 +18,4 @@ for filename in os.listdir(source_folder):
     destination_path = os.path.join(destination_folder, filename)
     shutil.move(source_path, destination_path)
 
-print("Images have been organized into folders based on class names.")
+print("Train images have been organized into sub-folders based on class names.")
